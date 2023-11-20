@@ -4,7 +4,14 @@
 a {text-decoration:none; color:#333; font-family: 'Noto Sans KR', sans-serif;}
 ul,ol,li {list-style: none;}
 body {font-size: 16px; color:#333; font-family: 'Noto Sans KR', sans-serif; }
-
+html{
+  /* 드래그 방지 */
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
 
 /* 1.상단 GNB */
 header {
@@ -190,8 +197,8 @@ header > div:nth-child(2) span {
   display: none;
 }
 #block2 {
-  width: 330px;
-  height: 440px;
+  width: 370px;
+  height: 490px;
   background-color: #fff;
   margin: 0 auto;
   margin-top: 70px;
@@ -204,10 +211,13 @@ header > div:nth-child(2) span {
   align-items: center;
   justify-content: center;
 }
+/* #block2 div:nth-child(1) img {
+  width: 350px;
+} */
 #block3 {
   /* background-color: #ebe3c5; */
   margin: 0 auto;
-  width: 303px;
+  width: 345px;
 }
 #block3 > div:nth-child(1) {
   display: flex;
@@ -260,7 +270,7 @@ header > div:nth-child(2) span {
 /* 2.상단 GNB */
 #header41 {
   background-color: #F8F9FB;
-  height: 1050px;
+  height: 770px;
   display: flex;
   flex-direction: column;
   align-items: center;
